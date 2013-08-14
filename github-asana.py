@@ -107,5 +107,5 @@ def index(environ,start_response):
 print "[*] Serving %s to port %d"%(BIND,PORT)
 
 server = wsgi.WSGIServer(
-    ('',PORT), index)
+    (BIND,PORT), index)
 server.serve_forever()
