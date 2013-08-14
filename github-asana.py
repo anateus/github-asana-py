@@ -14,6 +14,8 @@ from pprint import pprint
 BIND='localhost'
 PORT=8787
 ASANA_BASE_URL = 'https://app.asana.com/api/1.0'
+# Don't forget to add the colon to the API key
+# echo -n "<API key from Asana settings>:" | openssl enc -base64
 ASANA_KEY = ""
 ASANA_HEADERS= {"Authorization":"Basic %s"%ASANA_KEY}
 
